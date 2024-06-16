@@ -22,12 +22,12 @@ tags:
   - name: Order
     description: Operations about orders.
 servers:
-  - url: https://{tenant}/api/v1
+  - url: https://{tenant}/api
     variables:
       tenant:
         default: www
         description: Your tenant id
-  - url: https://example.com/api/v1
+  - url: https://example.com/api
 paths:
   /v1/customers:
     $ref: paths/v1/customers.yaml
