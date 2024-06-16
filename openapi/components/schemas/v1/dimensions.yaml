@@ -1,12 +1,12 @@
 type: object
 properties:
   length:
-    type: number
+    type: integer
     description: The length of the product
   width:
-    type: number
+    type: integer
     description: The width of the product
   height:
-    type: number
+    type: integer
     description: The height of the product
 description: The dimensions of the product
