@@ -19,16 +19,19 @@ properties:
     description: City
     minLength: 2
     maxLength: 100
+    example: New York
   state:
     type: string
     description: 2 character state code
     minLength: 2
     maxLength: 2
+    example: NY
   zip:
     type: string
     description: Zip Code
     minLength: 5
     maxLength: 10
+    example: 10001
 required:
   - addressLine1
   - city

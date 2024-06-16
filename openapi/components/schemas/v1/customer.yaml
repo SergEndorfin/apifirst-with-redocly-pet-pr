@@ -14,10 +14,12 @@ properties:
     type: string
     maxLength: 255
     minLength: 3
+    example: sergendorfin@gmail.com
   phone:
     type: string
     maxLength: 15
     minLength: 7
+    example: +420 555 888 212
   paymentMethods:
     type: array
     items:
