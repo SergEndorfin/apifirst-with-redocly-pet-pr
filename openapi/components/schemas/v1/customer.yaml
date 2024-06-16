@@ -11,12 +11,14 @@ properties:
   billToAddress:
     $ref: address.yaml
   email:
-    type: string
+    type: [ string, 'null' ]
     maxLength: 255
     minLength: 3
     example: sergendorfin@gmail.com
   phone:
-    type: string
+    type:
+      - string
+      - 'null'
     maxLength: 15
     minLength: 7
     example: +420 555 888 212
@@ -24,6 +26,14 @@ properties:
     type: array
     items:
       $ref: payment_method.yaml
+  dateCreated:
+    type: string
+    format: date-time
+    readOnly: true
+  dateUpdated:
+    type: string
+    format: date-time
+    readOnly: true
 required:
   - name
   - shipToAddress

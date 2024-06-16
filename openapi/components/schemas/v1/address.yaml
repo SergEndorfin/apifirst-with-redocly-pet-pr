@@ -9,8 +9,11 @@ properties:
     description: Address Line 1
     minLength: 3
     maxLength: 100
+    readOnly: true
   addressLine2:
-    type: string
+    type:
+      - string
+      - 'null'
     description: Address Line 2
     minLength: 3
     maxLength: 100
@@ -32,6 +35,14 @@ properties:
     minLength: 5
     maxLength: 10
     example: 10001
+  dateCreated:
+    type: string
+    format: date-time
+    readOnly: true
+  dateUpdated:
+    type: string
+    format: date-time
+    readOnly: true
 required:
   - addressLine1
   - city
