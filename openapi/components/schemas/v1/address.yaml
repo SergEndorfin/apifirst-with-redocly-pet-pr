@@ -3,37 +3,39 @@ properties:
   id:
     type: string
     format: uuid
-    description: Unique identifier representing a specific Customer
+    description: Unique identifier representing a specific customer
+    readOnly: true
+    nullable: true
   addressLine1:
     type: string
     description: Address Line 1
     minLength: 3
     maxLength: 100
-    readOnly: true
+    example: 123 Main Street
   addressLine2:
     type: string
-    nullable: true
     description: Address Line 2
     minLength: 3
     maxLength: 100
+    nullable: true
   city:
     type: string
     description: City
     minLength: 2
     maxLength: 100
-    example: New York
+    example: St Petersburg
   state:
     type: string
     description: 2 character state code
     minLength: 2
     maxLength: 2
-    example: NY
+    example: FL
   zip:
     type: string
     description: Zip Code
     minLength: 5
     maxLength: 10
-    example: 10001
+    example: 33701
   dateCreated:
     $ref: ../common/iso_timestamp.yaml
   dateUpdated:
