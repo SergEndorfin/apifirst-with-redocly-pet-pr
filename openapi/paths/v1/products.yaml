@@ -1,8 +1,8 @@
 get:
   tags:
     - Product
-  summary: Get a list of Products
-  description: Get a list of Products
+  summary: Get a list of products
+  description: Get a list of product.
   operationId: listProducts
   responses:
     '200':
@@ -12,7 +12,7 @@ get:
           schema:
             $ref: ../../components/schemas/v1/product_list.yaml
     '404':
-      description: Not found
+      description: Not Found
       content:
         application/json:
           schema:
@@ -20,8 +20,8 @@ get:
 post:
   tags:
     - Product
-  summary: Create a new Product
-  description: Create a new Product
+  summary: Create a new product
+  description: Create a new product.
   operationId: createProduct
   requestBody:
     content:
@@ -36,7 +36,7 @@ post:
           description: Location of the new resource
           schema:
             type: string
-            example: /v1/products/497f6eca-6276-4993-bfeb-53cbbbba6f08
+            example: /v1/products/27ca5995-f6e1-46bb-8f18-52458b7ed96e
     '400':
       description: Bad Request
       content:

@@ -1,9 +1,9 @@
 get:
   tags:
     - Product
-  summary: Get a Product by ID
+  summary: Get a product by ID
   description: |
-    Get a Product by ID
+    Get a product by ID
   operationId: getProductById
   parameters:
     - name: productId
