@@ -4,6 +4,8 @@ properties:
     type: string
     format: uuid
     description: The unique identifier of the order
+    nullable: true
+    readOnly: true
   customer:
     $ref: order_customer.yaml
   orderStatus:
