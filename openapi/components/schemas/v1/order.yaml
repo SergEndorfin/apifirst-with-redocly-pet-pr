@@ -16,7 +16,6 @@ properties:
     minLength: 1
     maxLength: 255
     nullable: true
-
   dateCreated:
     $ref: ../common/iso_timestamp.yaml
   dateUpdated:
