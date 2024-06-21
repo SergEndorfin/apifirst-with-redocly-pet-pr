@@ -20,10 +20,10 @@ properties:
     nullable: true
   phone:
     type: string
-    nullable: true
     maxLength: 15
     minLength: 7
-    example: +420 555 888 212
+    example: 800-555-1212
+    nullable: true
   paymentMethods:
     type: array
     nullable: true

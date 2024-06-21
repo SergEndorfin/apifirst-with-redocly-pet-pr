@@ -3,7 +3,7 @@ properties:
   id:
     type: string
     format: uuid
-    description: Unique ID representing a specific payment method.
+    description: Unique identifier representing a specific payment method.
     readOnly: true
     nullable: true
   displayName:
@@ -13,7 +13,7 @@ properties:
     example: My Chase Card
   cardNumber:
     type: integer
-    example: 1234 1234 1234 1234
+    example: 1234567890123456
   expiryMonth:
     type: integer
     example: 7
