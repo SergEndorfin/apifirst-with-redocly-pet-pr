@@ -25,7 +25,4 @@ properties:
     $ref: ../common/iso_timestamp.yaml
   dateUpdated:
     $ref: ../common/iso_timestamp.yaml
-required:
-  - customer
-  - orderStatus
-  - orderLines
+
